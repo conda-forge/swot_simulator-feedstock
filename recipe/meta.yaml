@@ -7,10 +7,10 @@ package:
 
 source:
     url: https://github.com/CNES/swot_simulator/releases/download/{{ version }}/swot_simulator-{{ version }}.tar.gz
-    sha256: 6e5ad18694cc774c1b2affc7f01bc1073e5392ecaa4ce50049f9c0bce5b6f85b
+    sha256: b4d8052a7806baa16da04082c28c5d7c72a0ea16493ec2d07ff9da99469f681e
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
@@ -28,7 +28,7 @@ requirements:
     - netcdf4
     - numba
     - numpy
-    - pyinterp
+    - pyinterp >=0.3.2
     - python >=3.6
     - python-dateutil
     - scipy
