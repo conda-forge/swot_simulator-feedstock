@@ -7,10 +7,10 @@ package:
 
 source:
     url: https://github.com/CNES/swot_simulator/releases/download/{{ version }}/swot_simulator-{{ version }}.tar.gz
-    sha256: b4d8052a7806baa16da04082c28c5d7c72a0ea16493ec2d07ff9da99469f681e
+    sha256: 6d7b5d7a2ba99db0f32225c17c99d7f3add2606de23ae492afe58e4ed0118221
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
