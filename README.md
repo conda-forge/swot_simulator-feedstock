@@ -5,9 +5,13 @@ Home: https://github.com/CNES/swot_simulator
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/swot_simulator-feedstock/blob/master/LICENSE.txt)
 
 Summary: SWOT Simulator for Ocean Science
+
+Development: https://github.com/CNES/swot_simulator
+
+Documentation: https://swot-simulator.readthedocs.io/
 
 This software simulates SWOT observations of sea surface height (SSH) that
 can be applied to an ocean general circulation model (OGCM), allowing the
@@ -121,4 +125,5 @@ Feedstock Maintainers
 =====================
 
 * [@fbriol](https://github.com/fbriol/)
+* [@lucile.gaultier](https://github.com/lucile.gaultier/)
 
