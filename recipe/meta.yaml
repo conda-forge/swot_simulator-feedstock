@@ -1,16 +1,16 @@
 {% set name = "swot_simulator" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-    url: https://github.com/CNES/swot_simulator/releases/download/{{ version }}/swot_simulator-{{ version }}.tar.gz
-    sha256: 2bc3f93a0e557343923411ffd199434dd86b3dcfe7c2e75cdc340967c3cd53e6
+  url: https://github.com/CNES/swot_simulator/releases/download/{{ version }}/swot_simulator-{{ version }}.tar.gz
+  sha256: 721ad520f7fc099c79fad569556a8872a7d59db9428a4a4abb7ca80948b36ceb
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
@@ -32,6 +32,7 @@ requirements:
     - python >=3.6
     - python-dateutil
     - scipy
+    - tornado
     - xarray
 test:
   imports:
@@ -43,7 +44,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'SWOT Simulator for Ocean Science'
+  summary: SWOT Simulator for Ocean Science
   description: |
     This software simulates SWOT observations of sea surface height (SSH) that
     can be applied to an ocean general circulation model (OGCM), allowing the
