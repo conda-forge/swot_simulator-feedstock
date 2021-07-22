@@ -32,6 +32,7 @@ requirements:
     - python >=3.6
     - python-dateutil
     - scipy
+    - tornado
     - xarray
 test:
   imports:
