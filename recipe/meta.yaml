@@ -1,5 +1,5 @@
 {% set name = "swot_simulator" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/CNES/swot_simulator/releases/download/{{ version }}/swot_simulator-{{ version }}.tar.gz
-  sha256: 721ad520f7fc099c79fad569556a8872a7d59db9428a4a4abb7ca80948b36ceb
+  sha256: 39cb4c38ee434c37883c58ac5cf62357b1a0302d4f740c137a3b2486b502126e
 
 build:
   number: 0
