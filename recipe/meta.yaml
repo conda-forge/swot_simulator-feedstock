@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/CNES/swot_simulator/releases/download/{{ version }}/swot_simulator-{{ version }}.tar.gz
-  sha256: 5bbf4cfd2b4c0e065e9c92f5589850b05128fbb424d4b0b8833a9c6e0a73b2b1
+  sha256: 6fa4b4442fad10acfcb9a2cf586976ada737df147bdb16a852d59ed468ad64a3
 
 build:
   number: 0
