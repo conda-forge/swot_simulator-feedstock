@@ -10,7 +10,7 @@ source:
   sha256: cb68507975d69aecb5dff74d9c47601c1e6a2e3495d48676457c2d3ec6b09647
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
     - dask
@@ -29,12 +29,14 @@ requirements:
     - numba
     - numpy
     - pyinterp
-    - python >=3.6
+    - python >={{ python_min }}
     - python-dateutil
     - scipy
     - tornado
     - xarray
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - swot_simulator.launcher
 
